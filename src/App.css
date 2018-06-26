@@ -1,0 +1,16 @@
+body {
+	background-color: black;
+	color: #fff;
+}
+
+.pink {
+	color: #ed9aaa;
+}
+
+.pink-box {
+	background-color: #ed9aaa;
+}
+
+.big {
+	font-size: 50px;
+}
