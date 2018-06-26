@@ -55,6 +55,7 @@ I had to do what I had to reado.
 
 ## Acknowledgments :pray:
 
-[codebushi](https://codebushi.com/react-youtube-background/) for this very helpful article on how to implement a full page youtube background.
+* [codebushi](https://codebushi.com/react-youtube-background/) for this very helpful article on how to implement a full page youtube background.
+* [animate.css](https://daneden.github.io/animate.css/) for wonderful animations
 
 A huuuuge MEGA bigly thank you to our instructor, Jerome, and the TAs, Amber, Ricky, and Sasha!!  :grimacing:
