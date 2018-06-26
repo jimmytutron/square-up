@@ -75,6 +75,7 @@ class App extends Component {
         console.log("wow you won!")
         message = "뜨거워, 뜨거워, 뜨거워 like fire!";
         playAgain="When the bass drops it's another banger. You Won! Click any picture to play again"
+        shook = "animated tada infinite"
     }
     else {
     message = "Hitchu witdat DDU DU DDU DU";
