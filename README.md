@@ -1,2 +1,2 @@
-## LOOΠΔtic :dizzy::sparkles:
+## SQUARE UP :dizzy::sparkles:
 
