@@ -1,9 +1,11 @@
 body {
 	background-color: #ed9aaa;
 	color: #000;
+	overflow-x: hidden;
 }
 
 .pink-box {
+	background-color: #000;
 	color: #ed9aaa;
 	opacity: 0.8;
 	padding: 10px;

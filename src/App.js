@@ -14,6 +14,7 @@ class App extends Component {
     score: 0,
     bestScore: 0,
     message: "",
+    playAgain: "",
     shook: ""
   };
 
@@ -25,6 +26,7 @@ class App extends Component {
     let bestScore = this.state.bestScore;
     let message = this.state.message;
     let shook = this.state.shook;
+    let playAgain = this.state.playAgain;
 
     if(member.clicked === false){
       member.clicked = true;
@@ -37,9 +39,10 @@ class App extends Component {
       }
       message = "";
       shook = "";
+      playAgain = "",
       console.log(score)
       shuffle(Blackpink)
-      this.setState({score, bestScore, Blackpink, message, shook});
+      this.setState({score, bestScore, Blackpink, message, playAgain, shook});
     } else {
     this.seeULater();
     }
@@ -48,6 +51,7 @@ class App extends Component {
 
   seeULater = () => {
     let message = this.state.message;
+    let playAgain = this.state.playAgain;
     let shook = this.state.shook;
     let bestScore = this.state.bestScore;
     let score = this.state.score;
@@ -56,17 +60,19 @@ class App extends Component {
       bestScore = score;
       if (bestScore = 12){
         console.log("wow you won!")
+        playAgain="FOREVER YOUNG, YOU WON!"
       }
     } 
     else {
     message = "Hitchu witdat DDU DU DDU DU";
+    playAgain ="click any picture to play again!"
     shook = "animated jello"
     }
     score = 0;
     this.state.Blackpink.map((member) => {
       return member.clicked = false;
     });
-    this.setState({score, bestScore, message, shook})
+    this.setState({score, bestScore, message, playAgain, shook})
   }
 
    _onEnd(event) {
@@ -97,19 +103,22 @@ class App extends Component {
         </div>
       </div>
 
-      <Container>
-  
-
-      <div className = {this.state.shook}>
-          <div className="row justify-content-center">
-              <div className ="col-12 col-md-10  pink-box">
+                <div className="row justify-content-center pink-box">
+              <div className ="col-12 col-md-10">
                   <h1 className = "text-center font-weight-bold">BLΛƆKPIИK | SQUARE UP</h1>
                   <h2 className = "text-center font-weight-bold">
                   CURRENT SCORE: {this.state.score} | BEST SCORE: {this.state.bestScore}
                   </h2>
                   <h3 className = "text-center font-weight-bold big">{this.state.message}</h3>
+                  <h4 className = "text-center font-weight-bold font-style-italics">{this.state.playAgain}</h4>
               </div>
           </div>
+
+      <Container>
+  
+
+      <div className = {this.state.shook}>
+
 
           <div className="row justify-content-center no-gutters px-1 py-1">
 
