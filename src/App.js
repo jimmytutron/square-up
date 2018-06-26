@@ -69,11 +69,13 @@ class App extends Component {
 
     if (bestScore < score){
       bestScore = score;
-      if (bestScore = 12){
-        console.log("wow you won!")
-        playAgain="FOREVER YOUNG, YOU WON!"
-      }
     } 
+    else if (score === 12){
+
+        console.log("wow you won!")
+        message = "뜨거워, 뜨거워, 뜨거워 like fire!";
+        playAgain="When the bass drops it's another banger. You Won! Click any picture to play again"
+    }
     else {
     message = "Hitchu witdat DDU DU DDU DU";
     playAgain ="click any picture to play again!"
