@@ -15,10 +15,21 @@ class App extends Component {
     bestScore: 0,
     message: "",
     playAgain: "",
-    shook: ""
+    shook: "",
+    videoOptions: {}
   };
 
   dduDuDduDu = id => {
+
+
+    let videoOptions = {
+    playerVars: { // https://developers.google.com/youtube/player_parameters
+      autoplay: 1,
+      controls: 0,
+      rel: 0,
+      showinfo: 0,
+    }
+  };
 
     let member = this.state.Blackpink.filter(member => member.id === id)[0];
 
@@ -42,7 +53,7 @@ class App extends Component {
       playAgain = "",
       console.log(score)
       shuffle(Blackpink)
-      this.setState({score, bestScore, Blackpink, message, playAgain, shook});
+      this.setState({score, bestScore, Blackpink, message, playAgain, shook, videoOptions});
     } else {
     this.seeULater();
     }
@@ -75,27 +86,20 @@ class App extends Component {
     this.setState({score, bestScore, message, playAgain, shook})
   }
 
+
    _onEnd(event) {
     event.target.playVideo();
   }
 
   render() {
-      const videoOptions = {
-    playerVars: { // https://developers.google.com/youtube/player_parameters
-      autoplay: 1,
-      controls: 0,
-      rel: 0,
-      showinfo: 0
-    }
-  };
 
     return (
       <div>
-       <div className="video-background">
-        <div className="video-foreground">
+      <div className="video-background">
+      <div className="video-foreground">
           <YouTube
             videoId="IHNzOHi8sJs"
-            opts={videoOptions}
+            opts={this.state.videoOptions}
             className="video-iframe"
             onReady={this._onReady}
             onEnd={this._onEnd}
