@@ -9,6 +9,7 @@ body {
 	padding: 10px;
 	mix-blend-mode: multiply;
 	font-size: 50px;
+	text-shadow: 0px 0px 8px #4f1420;
 }
 
 .big {
@@ -44,10 +45,6 @@ body {
   animation-timing-function: linear;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
-}
-
-.super-padding {
-	padding-top: 42%;
 }
 
 .video-background {

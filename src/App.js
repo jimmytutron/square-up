@@ -55,7 +55,7 @@ class App extends Component {
     if (bestScore < score){
       bestScore = score;
       if (bestScore = 12){
-        console.log("bitch u won!")
+        console.log("wow you won!")
       }
     } 
     else {
@@ -67,6 +67,10 @@ class App extends Component {
       return member.clicked = false;
     });
     this.setState({score, bestScore, message, shook})
+  }
+
+   _onEnd(event) {
+    event.target.playVideo();
   }
 
   render() {
