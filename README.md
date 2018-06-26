@@ -1,7 +1,8 @@
 <h1 align="center">
   <a href="https://jimmytutron.github.io/square-up/"><img src="https://pre00.deviantart.net/70b6/th/pre/f/2018/166/a/4/blackpink___square_up__mini_album__by_yazforevah-dceg1ba.jpg" alt="square up" width="500"></a>
 </h1>
-<h5 align="center">Get hit with that DDU DU DDU DU (https://jimmytutron.github.io/square-up/)</h5>
+
+[<h5 align="center">Get hit with that DDU DU DDU DU</h5>](https://jimmytutron.github.io/square-up/)
 
 # SQUARE UP :sparkling_heart::black_medium_small_square:
 
