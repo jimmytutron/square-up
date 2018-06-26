@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import Container from "./components/Container";
 import Square from "./components/Square";
 import Blackpink from "./blackpink.json";
+import YouTube from 'react-youtube';
 import "./App.css";
 
 const shuffle = require("shuffle-array");
-
 
 class App extends Component {
 
@@ -70,21 +70,44 @@ class App extends Component {
   }
 
   render() {
+      const videoOptions = {
+    playerVars: { // https://developers.google.com/youtube/player_parameters
+      autoplay: 1,
+      controls: 0,
+      rel: 0,
+      showinfo: 0
+    }
+  };
+
     return (
+      <div>
+       <div className="video-background">
+        <div className="video-foreground">
+          <YouTube
+            videoId="IHNzOHi8sJs"
+            opts={videoOptions}
+            className="video-iframe"
+            onReady={this._onReady}
+            onEnd={this._onEnd}
+          />
+        </div>
+      </div>
 
       <Container>
+  
+
       <div className = {this.state.shook}>
           <div className="row justify-content-center">
-              <div className ="col-12 col-md-10">
-                  <h1 className = "text-center font-weight-bold pink">BLΛƆKPIИK | SQUARE UP</h1>
+              <div className ="col-12 col-md-10  pink-box">
+                  <h1 className = "text-center font-weight-bold">BLΛƆKPIИK | SQUARE UP</h1>
                   <h2 className = "text-center font-weight-bold">
                   CURRENT SCORE: {this.state.score} | BEST SCORE: {this.state.bestScore}
                   </h2>
-                  <h3 className = "text-center font-weight-bold pink big">{this.state.message}</h3>
+                  <h3 className = "text-center font-weight-bold big">{this.state.message}</h3>
               </div>
           </div>
 
-          <div className="row justify-content-center no-gutters pink-box px-1 py-1">
+          <div className="row justify-content-center no-gutters px-1 py-1">
 
               {this.state.Blackpink.map( (member, i) => (
               <Square
@@ -100,6 +123,7 @@ class App extends Component {
       </div>
 
       </Container>
+      </div>
     );
   }
 }
