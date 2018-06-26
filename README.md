@@ -8,6 +8,29 @@
 
 BLACKPINK has made their long anticipated return to the KPOP scene and have set the world on fire (by breaking all the girl group records). In celebration, I have made a simple click game.
 
+## Getting Started :boom:
+
+Click the big square at the top to play. Alternatively you could clone down this repo and play it locally.
+
+### Prerequisites :open_file_folder:
+You will need both `node` and `yarn` installed on your computer in order to run this app. You can find out more about `yarn` at their [official site.](https://yarnpkg.com/lang/en/docs/install/)
+
+### Installation :file_folder:
+Inside your terminal or command prompt, navigate to the location of the cloned repo. Install the necessary dependencies by running - 
+```
+npm i
+```
+or
+```
+yarn install
+```
+after the dependencies have been installed run
+```
+yarn start
+```
+to intialize the app. It will launch your prefered browser at `localhost:3000` that's it, now you can experience the ddu du ddu du
+
+
 ## How To Play :collision:
 
 It's simple. There are 12 pictures of the beautiful BLACKPINK members: Lisa, Jisoo, Rosé, and Jennie. Each time you click a picture your score increases. However if you click on an image you've already clicked it's game over! Click on all 12 without hitting a repeat to "win"! 
