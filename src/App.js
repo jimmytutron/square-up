@@ -127,7 +127,7 @@ class App extends Component {
       <div className = {this.state.shook}>
 
 
-          <div className="row justify-content-center no-gutters px-1 py-1">
+          <div className="bpgrid row justify-content-center no-gutters px-1 py-1">
 
               {this.state.Blackpink.map( (member, i) => (
               <Square
