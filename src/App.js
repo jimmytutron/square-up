@@ -70,7 +70,7 @@ class App extends Component {
     if (bestScore < score){
       bestScore = score;
     } 
-    else if (score === 12){
+    else if (score >= 12){
 
         console.log("wow you won!")
         message = "뜨거워, 뜨거워, 뜨거워 like fire!";
