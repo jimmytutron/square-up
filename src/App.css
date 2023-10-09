@@ -13,6 +13,11 @@ body {
 	text-shadow: 0px 0px 8px #4f1420;
 }
 
+.bpgrid {
+	width: 80%;
+	margin: 1rem auto;
+}
+
 .big {
 	font-size: 50px;
 }
