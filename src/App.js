@@ -25,6 +25,7 @@ class App extends Component {
     let videoOptions = {
     playerVars: { // https://developers.google.com/youtube/player_parameters
       autoplay: 1,
+      loop: 1,
       controls: 0,
       rel: 0,
       showinfo: 0,
